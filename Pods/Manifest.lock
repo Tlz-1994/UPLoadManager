@@ -1,0 +1,47 @@
+PODS:
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
+  - HappyDNS (0.3.5)
+  - Qiniu (7.0.20):
+    - AFNetworking (~> 3)
+    - HappyDNS (~> 0.3)
+  - SSZipArchive (1.2)
+  - UMengAnalytics (4.0.4)
+
+DEPENDENCIES:
+  - AFNetworking (~> 3.0)
+  - Qiniu (from `https://github.com/qiniu/objc-sdk.git`, branch `AFNetworking-3.x`)
+  - SSZipArchive
+  - UMengAnalytics
+
+EXTERNAL SOURCES:
+  Qiniu:
+    :branch: AFNetworking-3.x
+    :git: https://github.com/qiniu/objc-sdk.git
+
+CHECKOUT OPTIONS:
+  Qiniu:
+    :commit: 425fb4d50f39149685ee33914ac948156616408e
+    :git: https://github.com/qiniu/objc-sdk.git
+
+SPEC CHECKSUMS:
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  HappyDNS: 6f8cf46fa7c0b98a6591fe8ecb2e08d9907a6e8b
+  Qiniu: 4dbf1e6acb3236c4d7251046a17d08b16d21fcfe
+  SSZipArchive: 251093c65f98d6ea282c50bc404bfa631d9fd721
+  UMengAnalytics: 4ed421fb3bca63b26fc13c947743cabf3831d199
+
+COCOAPODS: 0.39.0

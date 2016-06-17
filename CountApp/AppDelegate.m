@@ -8,6 +8,12 @@
 
 #import "AppDelegate.h"
 
+#import "ViewController.h"
+
+#import "UMMobClick/MobClick.h"
+
+#import "ZipArchive.h"
+
 @interface AppDelegate ()
 
 @end
@@ -17,6 +23,13 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:[[ViewController alloc] init]];
+    self.window.rootViewController = nav;
+    [self.window makeKeyWindow];
+    
+    UMConfigInstance.appKey = @"575d0f7de0f55a26dc0029c8";
+    [MobClick startWithConfigure:UMConfigInstance];
     return YES;
 }
 
@@ -32,6 +45,10 @@
 
 - (void)applicationWillEnterForeground:(UIApplication *)application {
     // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
+    NSString *path = [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask, YES) lastObject] stringByAppendingString:@"/caccc"];
+    NSLog(@"%ld", time(NULL));
+    [SSZipArchive createZipFileAtPath:[[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask, YES) lastObject] stringByAppendingString:@"/caccc.zip"] withFilesAtPaths:@[path]];
+    NSLog(@"%ld", time(NULL));
 }
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {
