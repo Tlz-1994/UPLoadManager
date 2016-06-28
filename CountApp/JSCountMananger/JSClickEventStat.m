@@ -14,7 +14,7 @@
     NSDictionary *EventNameList = [NSDictionary dictionaryWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"PageName" ofType:@"plist"]];
     NSString *eventID = [EventNameList valueForKey:enentName];
     NSString *cacheString = nil;
-    cacheString = [NSString stringWithFormat:@"%@,%@,%ld", @"uid", eventID, time(NULL)];
+    cacheString = [NSString stringWithFormat:@"%ld,%@,%@,%@,%@", time(NULL), @"iOS", @"version", @"uid", eventID];
     cacheStr ? cacheStr(cacheString): nil;
 }
 

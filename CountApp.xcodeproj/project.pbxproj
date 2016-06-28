@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5BDC69D33DBC5F77A32A5AD0 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EBBD909083F0C6599461EEF /* libPods.a */; };
+		4A05EBE6D60E41D49360C19E /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F9292E94A5BD7AA85BB0D7A /* Pods.framework */; };
 		DA0116831D0CFB5F00D5A842 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DA0116821D0CFB5F00D5A842 /* main.m */; };
 		DA0116861D0CFB5F00D5A842 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DA0116851D0CFB5F00D5A842 /* AppDelegate.m */; };
 		DA0116891D0CFB5F00D5A842 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA0116881D0CFB5F00D5A842 /* ViewController.m */; };
@@ -20,9 +20,7 @@
 		DA0116BE1D0CFDDD00D5A842 /* JSHookUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = DA0116BC1D0CFDDD00D5A842 /* JSHookUtility.m */; };
 		DA0116C11D0CFE0F00D5A842 /* ViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = DA0116C01D0CFE0F00D5A842 /* ViewController2.m */; };
 		DA0116C41D0CFE1D00D5A842 /* ViewController3.m in Sources */ = {isa = PBXBuildFile; fileRef = DA0116C31D0CFE1D00D5A842 /* ViewController3.m */; };
-		DA0116C71D0CFFD400D5A842 /* JSStatisticsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DA0116C61D0CFFD400D5A842 /* JSStatisticsManager.m */; };
 		DA0116C91D0D094500D5A842 /* PageName.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA0116C81D0D094500D5A842 /* PageName.plist */; };
-		DA0116CC1D0D0D4900D5A842 /* JSPageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DA0116CB1D0D0D4900D5A842 /* JSPageManager.m */; };
 		DA182F7E1D13CCA800C9C886 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DA182F7C1D13CCA800C9C886 /* TableViewCell.m */; };
 		DA182F7F1D13CCA800C9C886 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA182F7D1D13CCA800C9C886 /* TableViewCell.xib */; };
 		DA78C8E11D0D3DCD0031FF0A /* JSStatisticalDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DA78C8E01D0D3DCD0031FF0A /* JSStatisticalDataManager.m */; };
@@ -30,6 +28,10 @@
 		DA78C8E81D0FAAA70031FF0A /* JSClickPageStat.m in Sources */ = {isa = PBXBuildFile; fileRef = DA78C8E71D0FAAA70031FF0A /* JSClickPageStat.m */; };
 		DA78C8EB1D0FAAB60031FF0A /* JSClickEventStat.m in Sources */ = {isa = PBXBuildFile; fileRef = DA78C8EA1D0FAAB60031FF0A /* JSClickEventStat.m */; };
 		DA78C8ED1D1001EB0031FF0A /* EventName.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA78C8EC1D1001EB0031FF0A /* EventName.plist */; };
+		DA8CA5691D20BABA00A5CF0D /* Upload.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8CA5681D20BABA00A5CF0D /* Upload.swift */; };
+		DA8CA56B1D20F74400A5CF0D /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8CA56A1D20F74400A5CF0D /* CustomCell.swift */; };
+		DA8CA56F1D21015E00A5CF0D /* KKNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8CA56E1D21015E00A5CF0D /* KKNavigationController.m */; };
+		DA8CA5731D2107D400A5CF0D /* MLNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8CA5721D2107D400A5CF0D /* MLNavigationController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		DAAAA17C1D1291BC00828699 /* JSUPLoad.m in Sources */ = {isa = PBXBuildFile; fileRef = DAAAA17B1D1291BC00828699 /* JSUPLoad.m */; };
 		DAAAA17F1D129C8800828699 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = DAAAA17E1D129C8800828699 /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 /* End PBXBuildFile section */
@@ -53,8 +55,8 @@
 
 /* Begin PBXFileReference section */
 		18DCCF13794A1CA9F8CDAD25 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		3EBBD909083F0C6599461EEF /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		72870B26BBD1C826814CAAC0 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		9F9292E94A5BD7AA85BB0D7A /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA01167E1D0CFB5F00D5A842 /* CountApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CountApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA0116821D0CFB5F00D5A842 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DA0116841D0CFB5F00D5A842 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -79,11 +81,7 @@
 		DA0116C01D0CFE0F00D5A842 /* ViewController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController2.m; sourceTree = "<group>"; };
 		DA0116C21D0CFE1D00D5A842 /* ViewController3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController3.h; sourceTree = "<group>"; };
 		DA0116C31D0CFE1D00D5A842 /* ViewController3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController3.m; sourceTree = "<group>"; };
-		DA0116C51D0CFFD400D5A842 /* JSStatisticsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSStatisticsManager.h; sourceTree = "<group>"; };
-		DA0116C61D0CFFD400D5A842 /* JSStatisticsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSStatisticsManager.m; sourceTree = "<group>"; };
 		DA0116C81D0D094500D5A842 /* PageName.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PageName.plist; sourceTree = "<group>"; };
-		DA0116CA1D0D0D4900D5A842 /* JSPageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSPageManager.h; sourceTree = "<group>"; };
-		DA0116CB1D0D0D4900D5A842 /* JSPageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSPageManager.m; sourceTree = "<group>"; };
 		DA182F7B1D13CCA800C9C886 /* TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
 		DA182F7C1D13CCA800C9C886 /* TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
 		DA182F7D1D13CCA800C9C886 /* TableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
@@ -96,6 +94,13 @@
 		DA78C8E91D0FAAB60031FF0A /* JSClickEventStat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSClickEventStat.h; sourceTree = "<group>"; };
 		DA78C8EA1D0FAAB60031FF0A /* JSClickEventStat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSClickEventStat.m; sourceTree = "<group>"; };
 		DA78C8EC1D1001EB0031FF0A /* EventName.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = EventName.plist; sourceTree = "<group>"; };
+		DA8CA5671D20BABA00A5CF0D /* CountApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CountApp-Bridging-Header.h"; sourceTree = "<group>"; };
+		DA8CA5681D20BABA00A5CF0D /* Upload.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Upload.swift; sourceTree = "<group>"; };
+		DA8CA56A1D20F74400A5CF0D /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		DA8CA56D1D21015E00A5CF0D /* KKNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKNavigationController.h; sourceTree = "<group>"; };
+		DA8CA56E1D21015E00A5CF0D /* KKNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKNavigationController.m; sourceTree = "<group>"; };
+		DA8CA5711D2107D400A5CF0D /* MLNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLNavigationController.h; sourceTree = "<group>"; };
+		DA8CA5721D2107D400A5CF0D /* MLNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLNavigationController.m; sourceTree = "<group>"; };
 		DAAAA17A1D1291BC00828699 /* JSUPLoad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSUPLoad.h; sourceTree = "<group>"; };
 		DAAAA17B1D1291BC00828699 /* JSUPLoad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSUPLoad.m; sourceTree = "<group>"; };
 		DAAAA17D1D129C8800828699 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
@@ -107,7 +112,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5BDC69D33DBC5F77A32A5AD0 /* libPods.a in Frameworks */,
+				4A05EBE6D60E41D49360C19E /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,7 +136,7 @@
 		BA0500F04FCF5EBC73CE1ABF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				3EBBD909083F0C6599461EEF /* libPods.a */,
+				9F9292E94A5BD7AA85BB0D7A /* Pods.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -148,6 +153,8 @@
 		DA0116751D0CFB5F00D5A842 = {
 			isa = PBXGroup;
 			children = (
+				DA8CA5701D2107D400A5CF0D /* Src */,
+				DA8CA56C1D21015E00A5CF0D /* KKNavigationController */,
 				DA0116801D0CFB5F00D5A842 /* CountApp */,
 				DA01169A1D0CFB5F00D5A842 /* CountAppTests */,
 				DA0116A51D0CFB5F00D5A842 /* CountAppUITests */,
@@ -224,10 +231,6 @@
 				DA0116BA1D0CFDDD00D5A842 /* UIViewController+SwizzlingView.m */,
 				DA0116BB1D0CFDDD00D5A842 /* JSHookUtility.h */,
 				DA0116BC1D0CFDDD00D5A842 /* JSHookUtility.m */,
-				DA0116C51D0CFFD400D5A842 /* JSStatisticsManager.h */,
-				DA0116C61D0CFFD400D5A842 /* JSStatisticsManager.m */,
-				DA0116CA1D0D0D4900D5A842 /* JSPageManager.h */,
-				DA0116CB1D0D0D4900D5A842 /* JSPageManager.m */,
 				DA78C8E31D0E992A0031FF0A /* JSClick.h */,
 				DA78C8E41D0E992A0031FF0A /* JSClick.m */,
 				DA78C8E61D0FAAA70031FF0A /* JSClickPageStat.h */,
@@ -238,12 +241,33 @@
 				DA78C8E01D0D3DCD0031FF0A /* JSStatisticalDataManager.m */,
 				DAAAA17A1D1291BC00828699 /* JSUPLoad.h */,
 				DAAAA17B1D1291BC00828699 /* JSUPLoad.m */,
+				DA8CA5681D20BABA00A5CF0D /* Upload.swift */,
+				DA8CA56A1D20F74400A5CF0D /* CustomCell.swift */,
 				DAAAA17D1D129C8800828699 /* JSONKit.h */,
 				DAAAA17E1D129C8800828699 /* JSONKit.m */,
 				DA0116C81D0D094500D5A842 /* PageName.plist */,
 				DA78C8EC1D1001EB0031FF0A /* EventName.plist */,
+				DA8CA5671D20BABA00A5CF0D /* CountApp-Bridging-Header.h */,
 			);
 			path = JSCountMananger;
+			sourceTree = "<group>";
+		};
+		DA8CA56C1D21015E00A5CF0D /* KKNavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				DA8CA56D1D21015E00A5CF0D /* KKNavigationController.h */,
+				DA8CA56E1D21015E00A5CF0D /* KKNavigationController.m */,
+			);
+			path = KKNavigationController;
+			sourceTree = "<group>";
+		};
+		DA8CA5701D2107D400A5CF0D /* Src */ = {
+			isa = PBXGroup;
+			children = (
+				DA8CA5711D2107D400A5CF0D /* MLNavigationController.h */,
+				DA8CA5721D2107D400A5CF0D /* MLNavigationController.m */,
+			);
+			path = Src;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -432,19 +456,21 @@
 			files = (
 				DA78C8E51D0E992A0031FF0A /* JSClick.m in Sources */,
 				DA0116891D0CFB5F00D5A842 /* ViewController.m in Sources */,
-				DA0116C71D0CFFD400D5A842 /* JSStatisticsManager.m in Sources */,
 				DAAAA17C1D1291BC00828699 /* JSUPLoad.m in Sources */,
+				DA8CA56B1D20F74400A5CF0D /* CustomCell.swift in Sources */,
 				DA78C8E11D0D3DCD0031FF0A /* JSStatisticalDataManager.m in Sources */,
+				DA8CA56F1D21015E00A5CF0D /* KKNavigationController.m in Sources */,
 				DA0116861D0CFB5F00D5A842 /* AppDelegate.m in Sources */,
 				DA78C8EB1D0FAAB60031FF0A /* JSClickEventStat.m in Sources */,
-				DA0116CC1D0D0D4900D5A842 /* JSPageManager.m in Sources */,
 				DA0116BD1D0CFDDD00D5A842 /* UIViewController+SwizzlingView.m in Sources */,
 				DA0116831D0CFB5F00D5A842 /* main.m in Sources */,
 				DA78C8E81D0FAAA70031FF0A /* JSClickPageStat.m in Sources */,
 				DA0116BE1D0CFDDD00D5A842 /* JSHookUtility.m in Sources */,
+				DA8CA5691D20BABA00A5CF0D /* Upload.swift in Sources */,
 				DA0116C11D0CFE0F00D5A842 /* ViewController2.m in Sources */,
 				DA182F7E1D13CCA800C9C886 /* TableViewCell.m in Sources */,
 				DA0116C41D0CFE1D00D5A842 /* ViewController3.m in Sources */,
+				DA8CA5731D2107D400A5CF0D /* MLNavigationController.m in Sources */,
 				DAAAA17F1D129C8800828699 /* JSONKit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -589,6 +615,8 @@
 			baseConfigurationReference = 72870B26BBD1C826814CAAC0 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_BITCODE = NO;
 				ENABLE_TESTABILITY = NO;
 				INFOPLIST_FILE = CountApp/Info.plist;
@@ -607,6 +635,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.52jiaoshi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CountApp/JSCountMananger/CountApp-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				VALIDATE_PRODUCT = NO;
 				VALID_ARCHS = "armv7 armv7s arm64";
 			};
@@ -617,6 +647,8 @@
 			baseConfigurationReference = 18DCCF13794A1CA9F8CDAD25 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = CountApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -634,6 +666,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.52jiaoshi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CountApp/JSCountMananger/CountApp-Bridging-Header.h";
 				VALIDATE_PRODUCT = NO;
 				VALID_ARCHS = "armv7 armv7s arm64";
 			};

@@ -18,12 +18,25 @@ PODS:
   - Qiniu (7.0.20):
     - AFNetworking (~> 3)
     - HappyDNS (~> 0.3)
+  - ReactiveCocoa (4.0.4-alpha-4):
+    - ReactiveCocoa/UI (= 4.0.4-alpha-4)
+    - Result (~> 1.0)
+  - ReactiveCocoa/Core (4.0.4-alpha-4):
+    - ReactiveCocoa/no-arc
+    - Result (~> 1.0)
+  - ReactiveCocoa/no-arc (4.0.4-alpha-4):
+    - Result (~> 1.0)
+  - ReactiveCocoa/UI (4.0.4-alpha-4):
+    - ReactiveCocoa/Core
+    - Result (~> 1.0)
+  - Result (1.0.2)
   - SSZipArchive (1.2)
   - UMengAnalytics (4.0.4)
 
 DEPENDENCIES:
   - AFNetworking (~> 3.0)
   - Qiniu (from `https://github.com/qiniu/objc-sdk.git`, branch `AFNetworking-3.x`)
+  - ReactiveCocoa (~> 4.0.2-alpha-1)
   - SSZipArchive
   - UMengAnalytics
 
@@ -41,6 +54,8 @@ SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   HappyDNS: 6f8cf46fa7c0b98a6591fe8ecb2e08d9907a6e8b
   Qiniu: 4dbf1e6acb3236c4d7251046a17d08b16d21fcfe
+  ReactiveCocoa: e459ea92099447802df20c4735e31e8139b06094
+  Result: dd3dd71af3fa2e262f1a999e14fba2c25ec14f16
   SSZipArchive: 251093c65f98d6ea282c50bc404bfa631d9fd721
   UMengAnalytics: 4ed421fb3bca63b26fc13c947743cabf3831d199
 

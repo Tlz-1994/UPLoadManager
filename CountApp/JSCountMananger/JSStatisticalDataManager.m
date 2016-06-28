@@ -29,7 +29,7 @@
     for (NSInteger i = 0; i < directorys.count; i++) {
         NSString *directory = directorys[i];
         if(![fileManager fileExistsAtPath:directory]){
-            __autoreleasing NSError *error = nil;
+            NSError __autoreleasing *error = nil;
             [fileManager createDirectoryAtPath:directory withIntermediateDirectories:YES attributes:nil error:&error];
         }
         // 如果文件夹中文件为空 创建一个空的文本文件保存
@@ -48,7 +48,12 @@
 }
 
 + (void)dealCacheString:(NSString *)cacheString dataType:(DATA_TYPE)dataType timeType:(TIME_TYPE)timeType {
-    NSLog(@"%@", cacheString);
+    
+    // 读取不到配对的页面或者事件  return  不记录
+    NSArray *arr = [cacheString componentsSeparatedByString:@","];
+    if ([arr[4] isEqual:@"(null)"]) {
+        return;
+    }
     
     if (dataType == PAGE_STATISYICAL) {
         switch (timeType) {
@@ -89,6 +94,8 @@
                 break;
         }
     }
+    
+    NSLog(@"%@", cacheString);
 }
 
 

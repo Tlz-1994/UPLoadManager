@@ -16,6 +16,10 @@
 
 #import "TableViewCell.h"
 
+#import <objc/runtime.h>
+
+typedef void (^actionBlock)(NSString *obj1, NSString *obj2);
+
 @interface ViewController () <UITableViewDelegate, UITableViewDataSource>
 
 
@@ -33,6 +37,11 @@
     self.title = @"页面1";
     [JSClick starLogService];
     [self initTableView];
+    
+    actionBlock block = ^(NSString *obj1, NSString *obj2) {
+        
+    };
+    
 }
 
 - (void)initTableView {
@@ -59,6 +68,14 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     ViewController2 *vc = [[ViewController2 alloc] init];
     [self.navigationController pushViewController:vc animated:YES];
+    
+    
+    [self performSelector:@selector(dealy) withObject:nil afterDelay:2];
+}
+
+- (void)dealy {
+    [_tabelView deselectRowAtIndexPath:[_tabelView indexPathForSelectedRow] animated:YES];
+    
 }
 
 - (void)didReceiveMemoryWarning {

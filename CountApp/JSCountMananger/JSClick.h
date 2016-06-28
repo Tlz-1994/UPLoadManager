@@ -58,7 +58,7 @@ typedef NS_ENUM(NSUInteger, DATA_TYPE) {
  *  @param pageName 页面的名称
  *  @param timeType 上报时间类型
  */
-+ (void)leavePageView:(NSString *)pageName timeType:(TIME_TYPE)timeType;
++ (void)leavePageView:(NSString *)pageName timeType:(TIME_TYPE)timeType pageType:(NSString *)pageType objectid:(NSString *)objectid;
 
 
 #pragma mark 事件统计

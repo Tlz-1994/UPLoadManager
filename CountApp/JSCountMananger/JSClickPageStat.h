@@ -15,7 +15,7 @@ typedef void(^cacheString)(NSString *cacheString);
 
 + (void)enterPageView:(NSString *)pageName timeType:(TIME_TYPE)timeType;
 
-+ (void)leavePageView:(NSString *)pageName timeType:(TIME_TYPE)timeType cacheString:(cacheString)cacheStr;
++ (void)leavePageView:(NSString *)pageName pageType:(NSString *)pageType objectid:(NSString *)objectid timeType:(TIME_TYPE)timeType cacheString:(cacheString)cacheStr;
 
 
 @end

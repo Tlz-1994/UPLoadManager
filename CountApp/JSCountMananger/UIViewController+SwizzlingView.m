@@ -9,12 +9,13 @@
 #import "UIViewController+SwizzlingView.h"
 
 #import "JSHookUtility.h"
-#import "JSStatisticsManager.h"
 #import "JSClick.h"
 
 #import "UMMobClick/MobClick.h"
 
+
 @implementation UIViewController (SwizzlingView)
+
 
 + (void)load {
     static dispatch_once_t onceToken;
@@ -32,7 +33,7 @@
 - (void)swiz_viewWillAppear:(BOOL)animated {
     
     NSString *className = NSStringFromClass([self class]);
-    if (![className isEqualToString:@"UINavigationController"] && ![className isEqualToString:@"UIInputWindowController"]) {
+    if (![className isEqualToString:@"UINavigationController"] && ![className isEqualToString:@"UIInputWindowController"] && ![className isEqualToString:@"UICompatibilityInputViewController"]) {
         [MobClick beginLogPageView:className];
         [JSClick enterPageView:className timeType:M5_DATA];
     }
@@ -42,9 +43,9 @@
 - (void)swiz_viewWillDisappear:(BOOL)animated {
     
     NSString *className = NSStringFromClass([self class]);
-    if (![className isEqualToString:@"UINavigationController"] && ![className isEqualToString:@"UIInputWindowController"]) {
+    if (![className isEqualToString:@"UINavigationController"] && ![className isEqualToString:@"UIInputWindowController"] && ![className isEqualToString:@"UICompatibilityInputViewController"]) {
         [MobClick endLogPageView:className];
-        [JSClick leavePageView:className timeType:M5_DATA];
+        [JSClick leavePageView:className timeType:M5_DATA pageType:nil objectid:nil];
     }
     [self swiz_viewWillDisappear:animated];
 }

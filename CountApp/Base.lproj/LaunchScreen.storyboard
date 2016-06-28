@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -16,7 +17,29 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="1JQ-j3-0VU">
+                                <rect key="frame" x="290" y="290" width="20" height="20"/>
+                            </activityIndicatorView>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LIx-1o-jtM">
+                                <rect key="frame" x="276" y="238" width="51" height="31"/>
+                            </switch>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="LIx-1o-jtM" secondAttribute="trailing" constant="255" id="8uo-Uj-UBj"/>
+                            <constraint firstItem="LIx-1o-jtM" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="218" id="Bap-9e-Yrr"/>
+                            <constraint firstItem="1JQ-j3-0VU" firstAttribute="top" secondItem="LIx-1o-jtM" secondAttribute="bottom" constant="21" id="I30-qG-qfM"/>
+                            <constraint firstItem="LIx-1o-jtM" firstAttribute="centerX" secondItem="1JQ-j3-0VU" secondAttribute="centerX" id="dQo-7v-xHv"/>
+                            <constraint firstItem="LIx-1o-jtM" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="eWJ-P0-idv"/>
+                            <constraint firstItem="LIx-1o-jtM" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="218" id="yWc-2E-jSI"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="8uo-Uj-UBj"/>
+                                <exclude reference="yWc-2E-jSI"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -8,5 +8,61 @@
 	<string>2</string>
 	<key>ViewController3</key>
 	<string>3</string>
+	<key>PracticeViewController</key>
+	<string>exercise</string>
+	<key>ChapterViewController</key>
+	<string>chapter</string>
+	<key>AnswerViewController</key>
+	<string>doExercise</string>
+	<key>ReportViewController</key>
+	<string>exerciseReport</string>
+	<key>WrongQuestionViewController</key>
+	<string>wrongQuestion</string>
+	<key>MyWrongSecondVC</key>
+	<string>wrongQuestionDetailList</string>
+	<key>MyWrongAnswerVC</key>
+	<string>doWrongQuestion</string>
+	<key>RecommendAnswerVC</key>
+	<string>recommendWrongQuestion</string>
+	<key>LiveClassController</key>
+	<string>classList</string>
+	<key>LiveDetailController</key>
+	<string>classDetail</string>
+	<key>MyClassController</key>
+	<string>purchasedClass</string>
+	<key>PayController</key>
+	<string>confirm</string>
+	<key>PayNoAddressVC</key>
+	<string>confirm</string>
+	<key>PaySuccessVC</key>
+	<string>paySuccess</string>
+	<key>DownloadH5VC</key>
+	<string>localPlay</string>
+	<key>H5Controller</key>
+	<string>onlinePlay</string>
+	<key>TestPaperViewController</key>
+	<string>moldTest</string>
+	<key>TestAnswerController</key>
+	<string>papersExercise</string>
+	<key>TestReportController</key>
+	<string>papersReport</string>
+	<key>MoTestDetailController</key>
+	<string>moldDetail</string>
+	<key>MoTestAnswerController</key>
+	<string>moldExercise</string>
+	<key>MoTestReportController</key>
+	<string>moldReport</string>
+	<key>OwnMainVC</key>
+	<string>mine</string>
+	<key>SettingVC</key>
+	<string>setting</string>
+	<key>FeedbackViewController</key>
+	<string>appraise</string>
+	<key>AboutUsController</key>
+	<string>aboutUs</string>
+	<key>PersonalController</key>
+	<string>personalInfo</string>
+	<key>ChangePassWordController</key>
+	<string>modifyPassword</string>
 </dict>
 </plist>

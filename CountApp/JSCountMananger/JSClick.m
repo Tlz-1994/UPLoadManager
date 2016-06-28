@@ -65,7 +65,7 @@ static JSClickInstance *instanse = nil;
         [JSStatisticalDataManager uploadLogDataType:EVENT_STATISYICAL timeType:M5_DATA];
         [JSStatisticalDataManager samplingIntervalCreatCacheFileTimeType:M5_DATA];
     }
-    if (time(NULL) - TIMEPOINT(timePointH1) >= 60) {
+    if (time(NULL) - TIMEPOINT(timePointH1) >= 3600) {
         // 一小时上传服务
         STETIME(timePointH1);
         NSLog(@"一小时上传服务");
@@ -73,7 +73,7 @@ static JSClickInstance *instanse = nil;
         [JSStatisticalDataManager uploadLogDataType:EVENT_STATISYICAL timeType:H1_DATA];
         [JSStatisticalDataManager samplingIntervalCreatCacheFileTimeType:H1_DATA];
     }
-    if (time(NULL) - TIMEPOINT(timePointD1) >= 90) {
+    if (time(NULL) - TIMEPOINT(timePointD1) >= 86400) {
         // 一天上传服务
         STETIME(timePointD1);
         NSLog(@"一天上传服务");
@@ -93,9 +93,9 @@ static JSClickInstance *instanse = nil;
     [JSClickPageStat enterPageView:pageName timeType:timeType];
 }
 
-+ (void)leavePageView:(NSString *)pageName timeType:(TIME_TYPE)timeType {
++ (void)leavePageView:(NSString *)pageName timeType:(TIME_TYPE)timeType pageType:(NSString *)pageType objectid:(NSString *)objectid {
     __weak typeof(self) weakSelf = self;
-    [JSClickPageStat leavePageView:pageName timeType:timeType cacheString:^(NSString *cacheString) {
+    [JSClickPageStat leavePageView:pageName pageType:pageType objectid:objectid timeType:timeType cacheString:^(NSString *cacheString) {
         [weakSelf reportStatisticalWithDataType:PAGE_STATISYICAL timeType:timeType statisticalData:cacheString];
     }];
 }
